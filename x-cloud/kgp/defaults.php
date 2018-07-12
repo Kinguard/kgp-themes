@@ -24,15 +24,15 @@ class OC_Theme {
 	    return [
 	        'color-main-text' => '#000',
 			'color-main-background' => '#fff',
-			'color-primary' => '#f18800',
+			'color-primary' => '#f8eae3',
 			'color-primary-text' => '#000',
 			'color-error' => '#f2dede',
 			'color-warning' => '#fcf8e3',
 			'color-success' => '#dff0d8',
 			'color-loading' => '#f2dede',
 			'color-loading-dark' => '#e4b9b9',
-			'color-box-shadow' => '#be6b00',
-			'color-primary-element' => '#f18800'
+			'color-box-shadow' => '#e0a385',
+			'color-primary-element' => '#f8eae3'
 	    ];
 	}
 
@@ -41,7 +41,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		return 'https://nextcloud.com';
+		return 'https://www.kinguardproject.org/';
 	}
 
 	/**
@@ -89,7 +89,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return "KEEP - Let's Keep It Between Us";
+		return "The KinGuard Project - Article 8 in the Digital World";
 	}
 
 	/**
@@ -97,7 +97,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return "KEEP - Let's Keep It Between Us";
+		return "The KinGuard Project - Article 8 in the Digital World";
 	}
 
 	/**
@@ -105,7 +105,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return "KEEP - Let's Keep It Between Us";
+		return "The KinGuard Project - Article 8 in the Digital World";
 	}
 
 	/**
@@ -113,7 +113,7 @@ class OC_Theme {
 	 * @return string entity name
 	 */
 	public function getEntity() {
-		return 'OpenProducts';
+		return 'The KinGuard Project';
 	}
 
 	/**
@@ -121,7 +121,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return "KEEP - Let's Keep It Between Us";
+		return "The KinGuard Project - Article 8 in the Digital World";
 	}
 
 	/**
@@ -137,7 +137,7 @@ class OC_Theme {
 	 * @return string short footer
 	 */
 	public function getShortFooter() {
-		$footer = '© 2015 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$footer = '© 2018 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
 
 		return $footer;
@@ -148,14 +148,14 @@ class OC_Theme {
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '© 2015 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$footer = '© 2018 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
 
 		return $footer;
 	}
 
 	public function buildDocLinkToKey($key) {
-		return $this->getDocBaseUrl() . '/server/8.0/go.php?to=' . $key;
+		return $this->getDocBaseUrl() . '/server/12.0/go.php?to=' . $key;
 	}
 
 

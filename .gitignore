@@ -4,3 +4,4 @@ debian/files
 debian/debhelper*
 *sublime*
 target
+*.min.*

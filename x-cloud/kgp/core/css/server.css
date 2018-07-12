@@ -5,14 +5,14 @@
 /* gradient of the header color and a brighter shade */
 /* can also be a flat color or an image */
 #body-login {
-	background-image : url('../img/OpenProducts_Pattern.png');
+	/* background-image : url('../img/OpenProducts_Pattern.png'); */
 	background-color :  #ffffff;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
 	border-style : solid;
 	border-width : 10px;
-	border-color : #F18800;
+	border-color : #e0a385;
 	box-sizing : border-box;
 }
 
@@ -26,6 +26,14 @@
 	background-image : url('../img/logo.svg');
 }
 
+#controls {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"].radio:not(:disabled):not(:checked) + label:hover::before, input[type="radio"].radio:not(:disabled):not(:checked) + label:hover::before, input[type="checkbox"].checkbox:not(:disabled):not(:checked) + label:hover::before, input[type="radio"].checkbox:not(:disabled):not(:checked) + label:hover::before, input[type="checkbox"].radio:focus + label::before, input[type="radio"].radio:focus + label::before, input[type="checkbox"].checkbox:focus + label::before, input[type="radio"].checkbox:focus + label::before
+{
+	border-color: #888;	
+}
 .app_gallery #body-user header {
 	/* hide header on gallery page */
 	display : none;
@@ -59,7 +67,7 @@
 }
 
 .app_gallery #controls .sorting.active-button {
-	border : 1px solid rgba(241, 136, 0, .9);
+	border : 1px solid rgba(248, 234, 227, .9);
 	margin-top : 6px;
 	height: 34px;
 }
@@ -90,23 +98,28 @@
 	top : 0px;
 }
 
+.searchbox input[type="search"] {
+	background : transparent url("../img/actions/search_black.svg") no-repeat 6px center;
+}
+
 #searchbox {
 	margin-top : 8px;
 	margin-right : 250px;
-	background-color : #F18800;
+	background-color : #e0a385;
 	transition: all 0.3s ease 0s;
-	opacity : 1;
+	opacity : 0.8;
 	height: 28px;
 	min-height: 28px;
+	border: 1px solid #888;
 }
 
-.searchbox input[type="search"]:hover {
-	background-color : #be6500;
+#searchbox:hover {
+	opacity : 1;
 }
 
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
 
-	background-color : #f19a2b !important;
+	background-color : #e0a385;
 }
 
 
@@ -121,7 +134,7 @@
 #header .logo-icon
 {
 	background-image : url('../img/logo-type-white.png') !important;
-	width: 80px;
+	width: 180px;
 	margin: 0px 20px;
 
 }
@@ -168,13 +181,19 @@ select {
 input[type="submit"], input[type="button"], button, .button, .pager li a,
 input.primary[type="button"]
 {
-    background-color: #f18800;
+    background-color: #e0a385;
 	transition: all 0.3s ease 0s;
 	color : #fff;
+	border-color: #888;
+}
+
+select:not(:disabled):not(.primary):not(#quota):hover, button:not(:disabled):not(.primary):not(#quota):hover, .button:not(:disabled):not(.primary):not(#quota):hover, input:not([type="range"]):not(:disabled):not(.primary):not(#quota):hover, textarea:not(:disabled):not(.primary):not(#quota):hover, #quota:not(:disabled):not(.primary):not(#quota):hover, .pager li a:not(:disabled):not(.primary):not(#quota):hover, select:not(:disabled):not(.primary):focus, button:not(:disabled):not(.primary):focus, .button:not(:disabled):not(.primary):focus, input:not([type="range"]):not(:disabled):not(.primary):focus, textarea:not(:disabled):not(.primary):focus, #quota:not(:disabled):not(.primary):focus, .pager li a:not(:disabled):not(.primary):focus, select:not(:disabled):not(.primary).active, button:not(:disabled):not(.primary).active, .button:not(:disabled):not(.primary).active, input:not([type="range"]):not(:disabled):not(.primary).active, textarea:not(:disabled):not(.primary).active, #quota:not(:disabled):not(.primary).active, .pager li a:not(:disabled):not(.primary).active
+{
+	border-color: #555;	
 }
 
 .primary, input.primary[type="submit"], input.primary[type="button"], button.primary, .button.primary {
-    background-color: #f18800;
+    background-color: #e0a385;
     border : 1px solid rgba(240, 240, 240, 0.9);
     color: #fff;
 }
@@ -194,7 +213,7 @@ button:hover, button:focus,
 .button:hover, .button:focus,
 .button a:focus
 {
-	background-color: #be6500;
+	background-color: #e0a385;
 	color: #fff;
 }
 
@@ -223,7 +242,7 @@ table tr[data-type="dir"] td.filename a.name span.nametext {
 }
 
 #searchresults tbody tr.selected, #filestable tbody tr.selected {
-	background-color: #F18800;
+	background-color: #f8eae3;
 }
 #searchresults tbody tr:hover, tbody tr:active, #filestable tbody tr:hover, tbody tr:active {
 	background-color : #f1c791;
@@ -259,7 +278,7 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 
 #app-navigation {
 	padding-top : 60px;
-	background-color : #222222;
+	background-color : #000;
 	color : #fff;
 }
 
@@ -298,54 +317,60 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 #app-navigation #scrollable > ul > li:focus,
 #app-navigation #scrollable > ul > li:hover
 {
-	box-shadow : inset 2px 0 #F18800;
+	box-shadow : inset 2px 0 #f8eae3;
 }
-#content:not(.app-calendar) #app-navigation ul > li.active
+#app-navigation > ul > li:focus, #app-navigation > ul > li:hover, #app-navigation > ul > li.active, #app-navigation > ul > li a.selected, #app-navigation > ul > li:focus > a, #app-navigation > ul > li:hover > a, #app-navigation > ul > li.active > a, #app-navigation > ul > li a.selected > a
 {
-	background-color : #F18800;
+	box-shadow : inset 2px 0 #e0a385;
+}
+#content:not(.app-calendar) #app-navigation ul > li.active,
+#content:not(.app-calendar) #app-navigation ul > li.active > a
+{
+	background-color : #f8eae3;
+	color : #000;
 }
 
 #app-navigation .app-navigation-list-item .utils .action span {
     opacity: 0.6;
 }
 
-#app-navigation .nav-icon-sharingin, #app-navigation .nav-icon-sharingout, #app-navigation .icon-share, .addressbooklist-icon.icon-shared,.app-calendar .icon-shared {
+#app-navigation li:not(active) .nav-icon-sharingin, #app-navigation li:not(active) .nav-icon-sharingout, #app-navigation li:not(active) .icon-share, .addressbooklist-icon.icon-shared,.app-calendar .icon-shared {
 	background-image : url("../img/actions/share.svg");
 }
-#app-navigation .icon-close {
+#app-navigation li:not(active) .icon-close {
 	background-image : url("../img/actions/close.svg");
 }
 
-#app-navigation .icon-more {
+#app-navigation li:not(active) .icon-more {
 	background-image : url("../img/actions/more.svg");
 }
-#app-navigation .icon-public,
-#app-navigation .nav-icon-sharinglinks {
+#app-navigation li:not(active) .icon-public,
+#app-navigation li:not(active) .nav-icon-sharinglinks {
 	background-image : url("../img/actions/public.svg");
 }
-#app-navigation .icon-download {
+#app-navigation li:not(active) .icon-download {
 	background-image : url("../img/actions/download.svg");
 }
-#app-navigation .icon-mail {
+#app-navigation li:not(active) .icon-mail {
 	background-image : url("../img/actions/mail.svg");
 }
-#app-navigation .nav-icon-trashbin, #app-settings .icon-delete {
+#app-navigation li:not(active) .nav-icon-trashbin, #app-settings .icon-delete {
 	background-image : url("../img/actions/delete.svg");
 }
-#app-navigation .nav-trashbin, #app-navigation #quota {
-	background-color : #222222;
+#app-navigation li:not(active) .nav-trashbin, #app-navigation #quota {
+	background-color : #000;
 }
 
-#app-navigation .nav-icon-favorites {
+#app-navigation li:not(active) .nav-icon-favorites {
 	background-image : url("../img/actions/star.svg");
 }
-#app-navigation .nav-icon-files {
+#app-navigation li:not(.active) .nav-icon-files {
 	background-image : url("../img/actions/folder.svg");
 }
-#app-navigation .nav-icon-systemtagsfilter {
+#app-navigation li:not(active) .nav-icon-systemtagsfilter {
 	background-image : url("../img/actions/tag.svg");
 }
-#app-navigation .nav-icon-recent {
+#app-navigation li:not(active) .nav-icon-recent {
 	background-image : url("../img/actions/recent.svg");
 }
 
@@ -358,7 +383,7 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 }
 
 #app-settings-content, #app-settings-content a {
-	background-color : #222222;
+	background-color : #000;
 	color : #fff;
 }
 
@@ -372,12 +397,12 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 
 #app-settings .settings-fieldset .settings-upload {
 	transition: all 0.3s ease 0s;
-	background-color: #f18800;
+	background-color: #f8eae3;
     border : 1px solid rgba(240, 240, 240, 0.9);
     color: #fff;
 }
 #app-settings .settings-fieldset li.settings-fieldset-interior-upload:hover > span {
-	background-color : #be6500;
+	background-color : #e0a385;
 }
 
 #app-sidebar {
@@ -386,8 +411,8 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 }
 
 .ui-widget-header {
-	background : #f18800 none;
-	border: 1px solid #f18800;
+	background : #f8eae3 none;
+	border: 1px solid #f8eae3;
 }
 
 /* settings -> personal */
@@ -412,6 +437,20 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 .app-contacts .app-content-detail, .app-content-list, .app-tasks #app-content {
 	padding-top : 50px;
 }
+.app-contacts #details-actions a > span {
+	margin-left : 35px;
+}
+.app-contacts #new-contact-button {
+	color : #000;
+}
+.select2-results .select2-highlighted {
+	background-color : #f8eae3;
+	color: #000;
+}
+.ui-select-choices-row:hover {
+	background-color : #e0a385;
+	color : #000;	
+}
 /* Tasks specific */
 html.app_tasks form.searchbox {
 	display: none;
@@ -434,15 +473,10 @@ html.app_tasks form.searchbox {
 #content.app-tasks .icon.collection-starred {
 	background-position : -20px -20px;
 }
-/*
-#content.app-tasks li.task-item .task-body .icon.task-star.high, #content.app-tasks div.task-item .task-body .icon.task-star.high {
-	background-position : -160px -40px !important;	
+#app-navigation > ul > li:not(.active) .sprite::before {
+	background-image: url('../img/actions/sprites.svg');
 }
 
-#content.app-tasks .icon.detail-star.high {
-	background-position : -60px -100px !important;
-}
-*/
 #content.app-tasks .icon.collection-today {
 	color : #fff;
 	text-shadow: none;
@@ -451,7 +485,7 @@ html.app_tasks form.searchbox {
 	top : 118px;
 }
 .app-tasks div.percentdone {
-	background-color: #f18800 !important;
+	background-color: #f8eae3 !important;
 }
 .app-tasks #app-navigation li.list:not(.active) .app-navigation-entry-utils-menu-button {
     /* display: inherit; */
@@ -490,7 +524,7 @@ html.app_tasks form.searchbox {
 #app-navigation .togglebuttons .button.focus,
 #app-navigation .togglebuttons .button
  {
-	background-color: #f18800;
+	background-color: #f8eae3;
 	color: #fff;
 	border-color : #fff;
 	border : 1px solid #dbdbdb;
@@ -507,11 +541,11 @@ html.app_tasks form.searchbox {
 #app-navigation .datepicker-heading button:hover,
 #app-navigation .datepicker-heading button:focus,
 #app-navigation #datepicker table tbody button.active {
-	background-color : #be6b00;
+	background-color : #e0a385;
 }
 
 #app-navigation li.active {
-	background-color : #222222;
+	background-color : #000;
 }
 #app-navigation .app-navigation-list-item .calendarCheckbox {
 	border : 1px solid #ccc;
@@ -526,7 +560,7 @@ html.app_tasks form.searchbox {
 }
 
 #app-navigation .app-navigation-list-item .dropdown-menu li.active {
-	background-color: #f18800 !important;
+	background-color: #f8eae3 !important;
 }
 
 .app-calendar .modal-open .modal.popover, .app-calendar .modal-open .modal.import {
@@ -549,5 +583,5 @@ html.app_tasks form.searchbox {
 	
 /* Public share */
 #body-public #header {
-	background-color: #222222;
+	background-color: #000;
 }

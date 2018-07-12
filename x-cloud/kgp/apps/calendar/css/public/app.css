@@ -1,0 +1,14 @@
+/* calendar specific styles */
+
+#app-navigation .datepicker-heading .button,
+#app-navigation .togglebuttons .button.focus,
+#app-navigation .togglebuttons .button,
+#app-settings .settings-fieldset .settings-upload
+{
+	color : #000;
+}
+
+input[type="checkbox"].checkbox:checked + label::before
+{
+	background-image : url('../../../../core/img/actions/checkmark.svg');
+}

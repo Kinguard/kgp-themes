@@ -1,16 +1,13 @@
-Source: opi-themes
+Source: kgp-themes
 Section: devel
 Priority: optional
 Maintainer: PA Nilsson <pa@openproducts.se>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), yui-compressor
 Standards-Version: 3.9.4
 
-Package: opi-themes
+Package: kgp-themes
 Architecture: all
-Depends: ${misc:Depends},
- nextcloud,
- roundcubemail,
- kinguard-utils (>= 1.13)
+Depends: ${misc:Depends}
 Conflicts: 
-Description: OPI Themes
+Description: The Kinguard Project webapp themes
  Provieds themes for roundcube and nextcloud web applications
