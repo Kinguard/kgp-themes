@@ -1,3 +1,10 @@
+kgp-themes (1.0.2) vili; urgency=medium
+
+  * Fixed post-inst conflict with old opi-themes package. 
+  * Added roundcube theme.
+
+ -- PA Nilsson <pa@openproducts.se>  Thu, 12 Jul 2018 16:01:05 +0200
+
 kgp-themes (1.0.1) vili; urgency=medium
 
   * Initial copy / rename from opi-themes

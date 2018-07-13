@@ -12,14 +12,15 @@ body {
 }
 
 input.button.mainaction {
-    background: #f18800;
+    background: #50ffff;
 	transition: all 0.3s ease 0s;
-	color : #fff;
-	border-color: #f18800;
+	color : #000;
+	border-color: #e0a385;
 }
 input.button.mainaction:hover {
-	background: #be6b00;
-	border-color:  : #be6b00;
+	background: #505050;
+	border-color:  : #505050;
+	color : #fff;
 }
 
 
@@ -32,7 +33,7 @@ input.button.mainaction:hover {
 }
 #taskbar a.button-selected{
 	background-color : transparent;
-	color : #f18800;
+	color : #e0a385;
 }
 #toplogo {
 	height : 35px;
@@ -71,17 +72,17 @@ a.button:focus, input.button:focus {
 
 ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:focus, ul.listing.focus .listitem.focused span,
 .listbox .listitem.selected, .listbox .tablink.selected, .listbox .listitem.selected>a, .listbox .tablink.selected>a, .listing tbody tr.unfocused td, .listing tbody tr.selected td, .listing li.selected, .listing li.selected>a {
-	background-color : #f18800;
+	background-color : #e0a385;
 	color : #000;
 }
 .listbox, .listbox .boxfooter, .boxfooter .listbutton, #composequicksearch, ul.listing li, ul.listing li a {
-	background-color : #f1c791;
-	background : #f1c791;
+	background-color : #f8eae3;
+	background : #f8eae3;
 	color : #000;
 }
 .listbox .listitem a, .listbox .tablink a, .listing tbody td, .listing li a {
-	background-color : #f1c791;
-	background : #f1c791;
+	background-color : #f8eae3;
+	background : #f8eae3;
 	color : #000;
 }
 .listing.focus tbody tr.focused>td:first-child,
@@ -89,7 +90,7 @@ ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:
 	border-left: 0px;
 }
 .records-table tbody tr:hover {
-	background-color: #f5e0c5;
+	background-color: #eee;
 }
 .records-table tbody tr:hover td {
 	background-color: transparent;
@@ -110,12 +111,12 @@ ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:
 	background-image : url(images/buttons-dark.png);
 }
 .boxfooter .listbutton {
-	background-color : #f18800;
+	background-color : #e0a385;
 	color : #fff;
 }
 
 .boxfooter .listbutton:not(.disabled):hover {
-	background-color : #be6b00;
+	background-color : #d5855d;
 }
 
 #compose-contacts .boxfooter .listbutton.addto .inner,
@@ -138,22 +139,24 @@ ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:
  	border-top : 1px solid #000;
 }
 .records-table thead td {
-	background 	 : #f1c791;
+	background 	 : #f8eae3;
 }
 .records-table thead td a, .records-table thead td span {
 	color : #000;
 }
 .records-table.focus tr.selected td,
 .records-table tr.selected td {
-	background-color: #f18800 !important;
+	background-color: #e0a385 !important;
 	color : #000;
 }
-#messagelistcontainer {
-	background: url(images/OP_Pattern.png) center no-repeat #FFF;
-	background-position : left bottom;
+.records-table tr.selected td a,
+.records-table tr.selected td span
+{
+	color : #000 !important;
 }
+
 .uibox .boxtitle, .uibox .listing thead td {
-	background : #f18800;
+	background : #e0a385;
 	color : #000;
 	text-shadow : none;
 }
@@ -161,20 +164,21 @@ ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:
 	background : #f1ad56;
 }
 #compose-contacts #directorylist {
-	border-bottom:4px solid #f1c791;
+	border-bottom:4px solid #f8eae3;
 }
 #compose-contacts .scroller {
-	border-top : 1px solid #f1c791;
+	border-top : 1px solid #f8eae3;
 }
 .boxtitle, .uibox .listing thead td {
 	border-bottom : 1px solid #000;
 }
+
 #taskbar a span.button-inner {
 	background: url(images/buttons.png) -1000px 0 no-repeat;
 }
 #login-form .box-inner {
-	background : url(images/OP_Pattern.png) center no-repeat #FFF;
-	border : 1px solid #f18800;
+	border : 1px solid #e0a385;
+	background-image: linear-gradient(#fff 0px, rgb(248, 234, 227) 100%);
 }
 #login-form #logo {
 	width : 150px;
@@ -185,19 +189,24 @@ ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:
 	font-size : 14px;
 }
 #login-form input.button {
-	color : #FFF;
+	color : #000;
 	text-shadow : none;
-	background : #f18800;
+	background : #50ffff;
 	font-size : 16px;
 	padding : 15px 25px;
 }
+#login-form input.button:hover {
+	color : #FFF;
+	background: #505050;
+	border-color: #505050;
+}	
 
 .records-table thead th a, .records-table thead td a, .records-table thead th span, .records-table thead td span {	
 	color : #000;
 }
 
 .records-table thead th, .records-table thead td {
-	background : #f1c791;
+	background : #f8eae3;
 }
 
 #addresslist .boxfooter,
@@ -207,5 +216,5 @@ ul.treelist li a:focus, ul.listing .listitem a:focus, ul.listing .listitem span:
 
 .googie_list td.googie_list_onhover, ul.toolbarmenu li a.active:hover, ul.toolbarmenu li a.active:focus, #rcmKSearchpane ul li.selected, #pagejump-selector ul li.selected, select.decorated option:hover, select.decorated option[selected='selected']
 {
-	background-color : #f18800;
+	background-color : #e0a385;
 }

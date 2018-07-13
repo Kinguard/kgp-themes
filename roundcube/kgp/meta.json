@@ -1,7 +1,12 @@
 {
-	"name": "KGP KEEP",
-	"author": "PA Nilsson, OpenProducts (http://www.openproducts.com)",
+	"name": "KinGuard Standard",
+	"author": "PA Nilsson, OpenProducts (http://www.kinguardproject.org)",
 	"license": "Creative Commons Attribution-ShareAlike",
 	"license-url": "http://creativecommons.org/licenses/by-sa/3.0/",
-	"extends":"larry"
+	"extends":"larry",
+	"config": {
+		"support_url" : "https://www.kinguardproject.org/forum",
+		"product_name" : "The KinGuard Project Webmail"
+	}
+
 }

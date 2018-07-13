@@ -30,6 +30,11 @@ case "$1" in
     		
     	fi
 
+        rm -rf /usr/share/nextcloud/themes/kgp
+        ln -s /usr/share/kgp-themes/nextcloud/kgp /usr/share/nextcloud/themes/kgp
+
+        rm -rf /usr/share/roundcube/skins/kgp
+        ln -s /usr/share/kgp-themes/roundcube/kgp /usr/share/roundcube/skins/kgp
 
     ;;
 
