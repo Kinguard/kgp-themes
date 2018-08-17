@@ -26,14 +26,24 @@
 	background-image : url('../img/logo.svg');
 }
 
+/* 
 #controls {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+*/
 
 input[type="checkbox"].radio:not(:disabled):not(:checked) + label:hover::before, input[type="radio"].radio:not(:disabled):not(:checked) + label:hover::before, input[type="checkbox"].checkbox:not(:disabled):not(:checked) + label:hover::before, input[type="radio"].checkbox:not(:disabled):not(:checked) + label:hover::before, input[type="checkbox"].radio:focus + label::before, input[type="radio"].radio:focus + label::before, input[type="checkbox"].checkbox:focus + label::before, input[type="radio"].checkbox:focus + label::before
 {
 	border-color: #888;	
 }
+
+input[type="checkbox"].checkbox:checked + label::before, input[type="radio"].checkbox:checked + label::before
+{
+	background-image: url('../img/actions/checkmark.svg');
+	background-color: transparent;
+	border : none;
+}
+
 .app_gallery #body-user header {
 	/* hide header on gallery page */
 	display : none;
@@ -357,7 +367,7 @@ td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="fol
 #app-navigation li:not(active) .nav-icon-trashbin, #app-settings .icon-delete {
 	background-image : url("../img/actions/delete.svg");
 }
-#app-navigation li:not(active) .nav-trashbin, #app-navigation #quota {
+#app-navigation li.nav-trashbin:not(active), #app-navigation #quota {
 	background-color : #000;
 }
 

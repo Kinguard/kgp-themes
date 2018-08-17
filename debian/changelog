@@ -1,3 +1,9 @@
+kgp-themes (1.0.3) vili; urgency=medium
+
+  * Minor css fixes to NC theme. 
+
+ -- PA Nilsson <pa@openproducts.se>  Fri, 17 Aug 2018 09:36:49 +0200
+
 kgp-themes (1.0.2) vili; urgency=medium
 
   * Fixed post-inst conflict with old opi-themes package. 
