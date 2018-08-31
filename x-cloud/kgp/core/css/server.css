@@ -531,11 +531,10 @@ html.app_tasks form.searchbox {
 }
 
 #app-navigation .datepicker-heading .button,
-#app-navigation .togglebuttons .button.focus,
 #app-navigation .togglebuttons .button
  {
 	background-color: #f8eae3;
-	color: #fff;
+	color: #000;
 	border-color : #fff;
 	border : 1px solid #dbdbdb;
 }
@@ -545,13 +544,27 @@ html.app_tasks form.searchbox {
 }
 
 #app-navigation .togglebuttons button:hover,
-#app-navigation .togglebuttons .button:hover,
-#app-navigation .togglebuttons .button.active,
-#app-navigation .togglebuttons .button.today:focus,
+#app-navigation .togglebuttons button:focus,
 #app-navigation .datepicker-heading button:hover,
 #app-navigation .datepicker-heading button:focus,
+#app-navigation #datepicker table tbody button.active
+{
+	background-color : #e0a385;
+	color : #fff;
+}
+#app-navigation .togglebuttons .button.active,
 #app-navigation #datepicker table tbody button.active {
 	background-color : #e0a385;
+	color : #000;
+}
+#app-navigation #datepicker table tbody button {
+	font-weight: bold;
+	opacity: 0.8;
+}
+
+#app-navigation #datepicker table tbody button:hover {
+	opacity: 1;
+	color : #e0a385;
 }
 
 #app-navigation li.active {

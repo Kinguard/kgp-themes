@@ -1,3 +1,9 @@
+kgp-themes (1.0.4) vili; urgency=medium
+
+  * Fixed button colors for calendar buttons, closes #487
+
+ -- PA Nilsson <pa@openproducts.se>  Fri, 31 Aug 2018 12:22:09 +0200
+
 kgp-themes (1.0.3) vili; urgency=medium
 
   * Minor css fixes to NC theme. 
