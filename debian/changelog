@@ -1,3 +1,9 @@
+kgp-themes (1.0.5) vili; urgency=medium
+
+  * Updated NC theme so that headers in shared folders does not crash with app/user icons. 
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 15 Jan 2019 09:48:13 +0100
+
 kgp-themes (1.0.4) vili; urgency=medium
 
   * Fixed button colors for calendar buttons, closes #487

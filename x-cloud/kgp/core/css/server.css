@@ -175,7 +175,10 @@ input[type="checkbox"].checkbox:checked + label::before, input[type="radio"].che
 
 #app-content-recent,
 #app-content-favorites,
-#app-content-trashbin
+#app-content-trashbin,
+#app-content-sharinglinks,
+#app-content-sharingin,
+#app-content-sharingout
 {
 	margin-top : 40px;
 }
