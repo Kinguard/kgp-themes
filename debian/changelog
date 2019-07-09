@@ -1,3 +1,9 @@
+kgp-themes (1.0.7) vili; urgency=medium
+
+  * Add dep on php-cli since used in postinst
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 09 Jul 2019 14:20:12 +0200
+
 kgp-themes (1.0.6) vili; urgency=medium
 
   * Allow theme app disable to fail
