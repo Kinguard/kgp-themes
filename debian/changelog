@@ -1,3 +1,9 @@
+kgp-themes (1.0.8) vili; urgency=medium
+
+  * Buster update
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 30 Aug 2019 14:36:44 +0200
+
 kgp-themes (1.0.7) vili; urgency=medium
 
   * Add dep on php-cli since used in postinst
