@@ -4,6 +4,30 @@
 /* log in screen background color */
 /* gradient of the header color and a brighter shade */
 /* can also be a flat color or an image */
+body {
+	--image-logo : url('../img/logo-type-white.png');
+	--button-backgroundcolor : #e0a385;
+	--button-border : #888;
+	--button-hoverborder : #555;
+	--button-textcolor : #000;
+	--button-alttextcolor : #fff;
+	--altbutton-backgroundcolor : #000;
+	--text-hover : #555;
+
+	--color-primary-element : #e8ccaf);
+	--color-primary-element-light : #ce776f;
+	--color-background-dark : var(--button-backgroundcolor);
+}
+
+
+
+#app-navigation {
+	--color-primary : var(--button-backgroundcolor);
+	--color-main-text : white;
+	--color-main-background : black;
+	--color-text-lighter : var(--color-main-text);
+}
+
 #body-login {
 	/* background-image : url('../img/OpenProducts_Pattern.png'); */
 	background-color :  #ffffff;
@@ -12,126 +36,32 @@
 	background-position:center;
 	border-style : solid;
 	border-width : 10px;
-	border-color : #e0a385;
+	border-color : var(--button-backgroundcolor);
 	box-sizing : border-box;
 }
 
 #body-login p.info a:hover, #body-login form input[type="checkbox"] + label:hover {
-	color : #888;
+	color : var(--text-hover);
 }
 
-	
 
-#header .logo {
-	background-image : url('../img/logo.svg');
-}
 
-/* 
-#controls {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-*/
-
-input[type="checkbox"].radio:not(:disabled):not(:checked) + label:hover::before, input[type="radio"].radio:not(:disabled):not(:checked) + label:hover::before, input[type="checkbox"].checkbox:not(:disabled):not(:checked) + label:hover::before, input[type="radio"].checkbox:not(:disabled):not(:checked) + label:hover::before, input[type="checkbox"].radio:focus + label::before, input[type="radio"].radio:focus + label::before, input[type="checkbox"].checkbox:focus + label::before, input[type="radio"].checkbox:focus + label::before
+#header #nextcloud
 {
-	border-color: #888;	
+	overflow : visible;
 }
-
-input[type="checkbox"].checkbox:checked + label::before, input[type="radio"].checkbox:checked + label::before
+#header .logo-icon
 {
-	background-image: url('../img/actions/checkmark.svg');
-	background-color: transparent;
-	border : none;
-}
-
-.app_gallery #body-user header {
-	/* hide header on gallery page */
-	display : none;
-}
-.app_gallery #body-user #controls {
-	top : 0px;
-}
-
-.app_gallery #controls .button {
-	height : 36px; /* reset button height */
-}
-
-.app_gallery #controls span.right {
-	margin-right: 250px;
-}
-
-.app_gallery #controls .actions {
-	padding : 0px;
-}
-.app_gallery #controls .icon-add {
-	padding-left : 10px;
-	padding-top : 14px;
-}
-.app_gallery #controls .right div.button {
-	padding-left : 10px;
-	padding-top : 7px;
-}
-
-.app_gallery #controls .sorting.active-button {
-	padding-top : 6px;
-}
-
-.app_gallery #controls .sorting.active-button {
-	border : 1px solid rgba(248, 234, 227, .9);
-	margin-top : 6px;
-	height: 34px;
-}
-#controls #uploadprogressbar .label.inner,
-.app-calendar #app-navigation .app-navigation-entry-menu  button:hover,
-.app-calendar #app-navigation .app-navigation-entry-menu  button,
-.app-tasks #app-navigation .app-navigation-entry-menu li > a:hover,
-.app-tasks #app-navigation .app-navigation-entry-menu li > a
-
- {
-	color : #000;
-}
-
-#slideshow .slideshow-menu, #slideshow input.exit {
-	top:25px;
-}
-
-#gallery-button {
-	display:	none !important;
-}
-
-#filelist-button.button {
-	display : none;
+	background-image: var(--image-logo);
+	width: 180px;
+	margin: 10px 10px;
+	left : 0px;
 }
 
 #app-content #controls {
 	/* left : 47px;*/
 	top : 0px;
 }
-
-.searchbox input[type="search"] {
-	background : transparent url("../img/actions/search_black.svg") no-repeat 6px center;
-}
-
-#searchbox {
-	margin-top : 8px;
-	margin-right : 250px;
-	background-color : #e0a385;
-	transition: all 0.3s ease 0s;
-	opacity : 0.8;
-	height: 28px;
-	min-height: 28px;
-	border: 1px solid #888;
-}
-
-#searchbox:hover {
-	opacity : 1;
-}
-
-.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
-
-	background-color : #e0a385;
-}
-
 
 #header #contactsmenu, #header #settings {
 	display: none;
@@ -141,19 +71,7 @@ input[type="checkbox"].checkbox:checked + label::before, input[type="radio"].che
 	background-color: transparent;
 	pointer-events : none;
 }
-#header .logo-icon
-{
-	background-image : url('../img/logo-type-white.png') !important;
-	width: 180px;
-	margin: 0px 20px;
 
-}
-
-#body-user #header .logo-icon
-{
-	margin: 10px 10px;
-
-}
 #body-user #header .header-left {
 	width : 250px;
 }
@@ -169,445 +87,72 @@ input[type="checkbox"].checkbox:checked + label::before, input[type="radio"].che
 	display : none;
 }
 
-#content-wrapper {
-	padding-top : 0px;
-}
-
-#app-content-recent,
-#app-content-favorites,
-#app-content-trashbin,
-#app-content-sharinglinks,
-#app-content-sharingin,
-#app-content-sharingout
-{
-	margin-top : 40px;
-}
-#fileList tr td.filename
-{
-	padding-left : 40px;
-}
 
 select {
 	transition: all 0.3s ease 0s;
 }
 
-input[type="submit"], input[type="button"], button, .button, .pager li a,
-input.primary[type="button"]
-{
-    background-color: #e0a385;
-	transition: all 0.3s ease 0s;
-	color : #fff;
-	border-color: #888;
+
+div.select2-drop .select2-search input, select, button, .button, input:not([type="range"]), textarea, div[contenteditable="true"], .pager li a {
+	background-color: var(--button-backgroundcolor);
+	color: var(--button-textcolor);
+	border: 1px solid var(--button-border);
 }
 
-select:not(:disabled):not(.primary):not(#quota):hover, button:not(:disabled):not(.primary):not(#quota):hover, .button:not(:disabled):not(.primary):not(#quota):hover, input:not([type="range"]):not(:disabled):not(.primary):not(#quota):hover, textarea:not(:disabled):not(.primary):not(#quota):hover, #quota:not(:disabled):not(.primary):not(#quota):hover, .pager li a:not(:disabled):not(.primary):not(#quota):hover, select:not(:disabled):not(.primary):focus, button:not(:disabled):not(.primary):focus, .button:not(:disabled):not(.primary):focus, input:not([type="range"]):not(:disabled):not(.primary):focus, textarea:not(:disabled):not(.primary):focus, #quota:not(:disabled):not(.primary):focus, .pager li a:not(:disabled):not(.primary):focus, select:not(:disabled):not(.primary).active, button:not(:disabled):not(.primary).active, .button:not(:disabled):not(.primary).active, input:not([type="range"]):not(:disabled):not(.primary).active, textarea:not(:disabled):not(.primary).active, #quota:not(:disabled):not(.primary).active, .pager li a:not(:disabled):not(.primary).active
-{
-	border-color: #555;	
+div.select2-drop .select2-search input:not(:disabled):not(.primary):hover, select:not(:disabled):not(.primary):hover, button:not(:disabled):not(.primary):hover, .button:not(:disabled):not(.primary):hover, input:not([type="range"]):not(:disabled):not(.primary):hover, textarea:not(:disabled):not(.primary):hover, div[contenteditable="true"]:not(:disabled):not(.primary):hover, .pager li a:not(:disabled):not(.primary):hover, div.select2-drop .select2-search input:not(:disabled):not(.primary):focus, select:not(:disabled):not(.primary):focus, button:not(:disabled):not(.primary):focus, .button:not(:disabled):not(.primary):focus, input:not([type="range"]):not(:disabled):not(.primary):focus, textarea:not(:disabled):not(.primary):focus, div[contenteditable="true"]:not(:disabled):not(.primary):focus, .pager li a:not(:disabled):not(.primary):focus, div.select2-drop .select2-search input:not(:disabled):not(.primary).active, select:not(:disabled):not(.primary).active, button:not(:disabled):not(.primary).active, .button:not(:disabled):not(.primary).active, input:not([type="range"]):not(:disabled):not(.primary).active, textarea:not(:disabled):not(.primary).active, div[contenteditable="true"]:not(:disabled):not(.primary).active, .pager li a:not(:disabled):not(.primary).active {
+	border-color: var(button-hoverborder);
 }
-
-.primary, input.primary[type="submit"], input.primary[type="button"], button.primary, .button.primary {
-    background-color: #e0a385;
-    border : 1px solid rgba(240, 240, 240, 0.9);
-    color: #fff;
-}
-
-button[ng-click="cancel()"],button[ng-click="cancel()"]:hover {
-	background-color : #000;
-	color : #fff;
-}
-
-.primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover,
-.primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus, 
-input[type="submit"]:hover, input[type="submit"]:focus,
-.button a:focus,
-input[type="submit"]:hover, input[type="submit"]:focus,
-input[type="button"]:hover, input[type="button"]:focus,
-button:hover, button:focus,
-.button:hover, .button:focus,
-.button a:focus
-{
-	background-color: #e0a385;
-	color: #fff;
-}
-
-div.crumb {
-	background : rgba(0, 0, 0, 0) url(../img/breadcrumb.svg) no-repeat scroll right top / auto 30px;
-}
-div.crumb.last a, div.crumb:first-child a {
-    padding-right: 24px;
-}
-
-#controls .actions {
-	padding: 8px;
-	height : 30px;
-}
-#controls .button {
-	padding-top : 2px;
-	padding-bottom : 0px;
-	padding-right : 5px;
-	padding-left : 5px;
-	min-height : 28px;
-	height : 28px;
-}
-
-table tr[data-type="dir"] td.filename a.name span.nametext {
-    font-weight: bold;
-}
-
-#searchresults tbody tr.selected, #filestable tbody tr.selected {
-	background-color: #f8eae3;
-}
-#searchresults tbody tr:hover, tbody tr:active, #filestable tbody tr:hover, tbody tr:active {
-	background-color : #f1c791;
-}
-
-table.multiselect thead {
-	left : 252px;
-	top : 45px;
-}
-table.multiselect thead th {
-	background-color : #f1c791;
-}
-
-
-span.icon-folder, td[style*="folder.svg"], div[style*="folder.svg"], a[style*="folder.svg"] {
-	background-image : url(../img/filetypes/folder.svg) !important;
-}
-td[style*="folder-shared.svg"], div[style*="folder-shared.svg"], a[style*="folder-shared.svg"] {
-	background-image : url(../img/filetypes/folder-shared.svg) !important;
-}
-td[style*="folder-external.svg"], div[style*="folder-external.svg"], a[style*="folder-external.svg"] {
-	background-image : url(../img/filetypes/folder-external.svg) !important;
-}
-td[style*="folder-public.svg"], div[style*="folder-public.svg"], a[style*="folder-public.svg"] {
-	background-image : url(../img/filetypes/folder-public.svg) !important;
-}
-td[style*="folder-starred.svg"], div[style*="folder-starred.svg"], a[style*="folder-starred.svg"] {
-	background-image : url(../img/filetypes/folder-starred.svg) !important;
-}
-
-
-/*  From "apps.css"  */
 
 #app-navigation {
+	
+	color : var(--color-main-text);
+}
+
+#app-navigation:not(.vue) {
+
+	top: 0px !important;
 	padding-top : 60px;
-	background-color : #000;
-	color : #fff;
+	height : 100%;
 }
 
-#app-navigation li > a {
-	color :#fff;
+#app-navigation:not(.vue) .collapsible::before {
+	background-image: var(--icon-triangle-s-fff);
 }
 
-#app-navigation li:hover > label {
-	color : #fff;
+#app-navigation .icon-add {
+	background-image: var(--icon-add-fff);
+}
+#app-navigation .icon-shared, #app-navigation .icon-share {
+	background-image: var(--icon-share-fff);
+}
+#app-navigation .icon-more {
+	background-image: var(--icon-more-fff);
+}
+#app-navigation .settings-button {
+	background-image: var(--icon-settings-dark-fff);
+}
+#app-navigation .icon-download {
+	background-image: var(--icon-download-fff);
+}
+#app-navigation .icon-contacts-dark {
+	background-image: var(--icon-contacts-fff);
+}
+#app-navigation .icon-public {
+	background-image: var(--icon-public-fff);
+}
+#app-navigation .icon-rename {
+	background-image: var(--icon-rename-fff);
+}
+#app-navigation .icon-user {
+	background-image: var(--icon-user-fff);
 }
 
-#app-settings-content label:hover {
-	cursor:default;
-}
-
-#app-navigation .new-entity, #app-navigation .subscription-title {
-	color : #fff;
-	opacity : 0.7;
-}
-
-
-#app-navigation .new-entity:hover {
-	color : #fff;
-	opacity : 1;
-}
-
-
-
-/* handle icons on navigaion bar */
-
-#app-navigation  ul > li.selected > a,
-#app-navigation  ul > li:hover > a,
-#app-navigation  ul > li:focus > a,
-#app-navigation #scrollable div.new-entity-container:hover,
-#app-navigation #scrollable div.new-entity-container:focus,
-#app-navigation #scrollable > ul > li:focus,
-#app-navigation #scrollable > ul > li:hover
+#app-navigation input[type="checkbox"].checkbox:checked + label::before,
+#app-navigation input[type="radio"].checkbox:checked + label::before
 {
-	box-shadow : inset 2px 0 #f8eae3;
-}
-#app-navigation > ul > li:focus, #app-navigation > ul > li:hover, #app-navigation > ul > li.active, #app-navigation > ul > li a.selected, #app-navigation > ul > li:focus > a, #app-navigation > ul > li:hover > a, #app-navigation > ul > li.active > a, #app-navigation > ul > li a.selected > a
-{
-	box-shadow : inset 2px 0 #e0a385;
-}
-#content:not(.app-calendar) #app-navigation ul > li.active,
-#content:not(.app-calendar) #app-navigation ul > li.active > a
-{
-	background-color : #f8eae3;
-	color : #000;
+	background-color: var(----color-main-background);
 }
 
-#app-navigation .app-navigation-list-item .utils .action span {
-    opacity: 0.6;
-}
-
-#app-navigation li:not(active) .nav-icon-sharingin, #app-navigation li:not(active) .nav-icon-sharingout, #app-navigation li:not(active) .icon-share, .addressbooklist-icon.icon-shared,.app-calendar .icon-shared {
-	background-image : url("../img/actions/share.svg");
-}
-#app-navigation li:not(active) .icon-close {
-	background-image : url("../img/actions/close.svg");
-}
-
-#app-navigation li:not(active) .icon-more {
-	background-image : url("../img/actions/more.svg");
-}
-#app-navigation li:not(active) .icon-public,
-#app-navigation li:not(active) .nav-icon-sharinglinks {
-	background-image : url("../img/actions/public.svg");
-}
-#app-navigation li:not(active) .icon-download {
-	background-image : url("../img/actions/download.svg");
-}
-#app-navigation li:not(active) .icon-mail {
-	background-image : url("../img/actions/mail.svg");
-}
-#app-navigation li:not(active) .nav-icon-trashbin, #app-settings .icon-delete {
-	background-image : url("../img/actions/delete.svg");
-}
-#app-navigation li.nav-trashbin:not(active), #app-navigation #quota {
-	background-color : #000;
-}
-
-#app-navigation li:not(active) .nav-icon-favorites {
-	background-image : url("../img/actions/star.svg");
-}
-#app-navigation li:not(.active) .nav-icon-files {
-	background-image : url("../img/actions/folder.svg");
-}
-#app-navigation li:not(active) .nav-icon-systemtagsfilter {
-	background-image : url("../img/actions/tag.svg");
-}
-#app-navigation li:not(active) .nav-icon-recent {
-	background-image : url("../img/actions/recent.svg");
-}
-
-
-#app-navigation[class*=.icon]:hover {
-	opacity : 1;
-}
-#app-navigation ul.addressBookList li .action:hover {
-	opacity : 0.9;	
-}
-
-#app-settings-content, #app-settings-content a {
-	background-color : #000;
-	color : #fff;
-}
-
-#app-settings-header button, #app-settings-content, #app-settings-content a {
-	background-color : #000;
-}
-#app-settings-header button.settings-button{
-	background-image : url("../img/actions/settings.svg");
-}
-
-
-#app-settings .settings-fieldset .settings-upload {
-	transition: all 0.3s ease 0s;
-	background-color: #f8eae3;
-    border : 1px solid rgba(240, 240, 240, 0.9);
-    color: #fff;
-}
-#app-settings .settings-fieldset li.settings-fieldset-interior-upload:hover > span {
-	background-color : #e0a385;
-}
-
-#app-sidebar {
-	background-color : #f7f7f7;
-	background: linear-gradient(white, #f7f7f7);
-}
-
-.ui-widget-header {
-	background : #f8eae3 none;
-	border: 1px solid #f8eae3;
-}
-
-/* settings -> personal */
-
-#body-settings #header,#body-settings #passwordform {
-	display : none;
-}
-
-#body-settings #displayName {
-	disabled : "disabled";
-}
-
-
-.app-calendar #app-navigation #scrollable > ul > li:focus a,
-.app-calendar #app-navigation #scrollable > ul > li:hover a,
-.app-contacts .newAddressBookSubmit {
-	opacity : 1;
-}
-.app-contacts .app-content-detail, .app-content-list {
-	height : unset;
-}
-.app-contacts .app-content-detail, .app-content-list, .app-tasks #app-content {
-	padding-top : 50px;
-}
-.app-contacts #details-actions a > span {
-	margin-left : 35px;
-}
-.app-contacts #new-contact-button {
-	color : #000;
-}
-.select2-results .select2-highlighted {
-	background-color : #f8eae3;
-	color: #000;
-}
-.ui-select-choices-row:hover {
-	background-color : #e0a385;
-	color : #000;	
-}
-/* Tasks specific */
-html.app_tasks form.searchbox {
-	display: none;
-}
-#content.app-tasks .icon.collection-all {
-	background-position : -200px -20px;
-}
-#content.app-tasks .icon.collection-week {
-	background-position : -220px -20px;
-}
-#content.app-tasks .icon.collection-today {
-	background-position : -240px -39px;
-}
-#content.app-tasks .icon.collection-current {
-	background-position : -240px -100px;
-}
-#content.app-tasks .icon.collection-completed {
-	background-position : -100px -20px;
-}
-#content.app-tasks .icon.collection-starred {
-	background-position : -20px -20px;
-}
-#app-navigation > ul > li:not(.active) .sprite::before {
-	background-image: url('../img/actions/sprites.svg');
-}
-
-#content.app-tasks .icon.collection-today {
-	color : #fff;
-	text-shadow: none;
-}
-.app-tasks #app-content .sortorder-dropdown {
-	top : 118px;
-}
-.app-tasks div.percentdone {
-	background-color: #f8eae3 !important;
-}
-.app-tasks #app-navigation li.list:not(.active) .app-navigation-entry-utils-menu-button {
-    /* display: inherit; */
-    background-image : url('../img/actions/more.svg?v=1');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.app-tasks #app-settings-content li select {
-	color : #fff;
-}
-.app-tasks #app-sidebar {
-	min-width: 235px;
-}
-.app-tasks #app-sidebar div.content-wrapper .body .section.editing {
-	height: 90px;
-}
-.app-tasks #app-sidebar .timepicker-input {
-	width : 50px;
-	text-align: center;
-}
-/* Calendar specific */
-#fullcalendar {
-	padding-top : 50px;
-}
-
-#app-navigation .togglebuttons .button {
-	width : 58px;
-}
-
-.app-calendar #app-navigation #scrollable {
-	top:200px;
-}
-
-#app-navigation .datepicker-heading .button,
-#app-navigation .togglebuttons .button
- {
-	background-color: #f8eae3;
-	color: #000;
-	border-color : #fff;
-	border : 1px solid #dbdbdb;
-}
-	
-#datepicker table tbody button {
-	padding : 6px 7px;
-}
-
-#app-navigation .togglebuttons button:hover,
-#app-navigation .togglebuttons button:focus,
-#app-navigation .datepicker-heading button:hover,
-#app-navigation .datepicker-heading button:focus,
-#app-navigation #datepicker table tbody button.active
-{
-	background-color : #e0a385;
-	color : #fff;
-}
-#app-navigation .togglebuttons .button.active,
-#app-navigation #datepicker table tbody button.active {
-	background-color : #e0a385;
-	color : #000;
-}
-#app-navigation #datepicker table tbody button {
-	font-weight: bold;
-	opacity: 0.8;
-}
-
-#app-navigation #datepicker table tbody button:hover {
-	opacity: 1;
-	color : #e0a385;
-}
-
-#app-navigation li.active {
-	background-color : #000;
-}
-#app-navigation .app-navigation-list-item .calendarCheckbox {
-	border : 1px solid #ccc;
-}
-
-#app-navigation .app-navigation-list-item .dropdown-menu li > a {
-	color : #000;
-}
-
-#app-navigation .app-navigation-list-item .dropdown-menu li.active > a {
-	color : #fff;
-}
-
-#app-navigation .app-navigation-list-item .dropdown-menu li.active {
-	background-color: #f8eae3 !important;
-}
-
-.app-calendar .modal-open .modal.popover, .app-calendar .modal-open .modal.import {
-	background-color : #f7f7f7;
-}
-.app-calendar .modal-open .modal.popover .modal-content {
-	padding : 0px;
-}
-
-.app-calendar .modal-content form fieldset.events--fieldset {
-	padding : 20px;
-}
-
-#app-navigation .app-navigation-entry-menu .icon-public {
-	background-image : url("../img/actions/public_black.svg");
-}
-#app-navigation .app-navigation-entry-menu .icon-download {
-	background-image : url("../img/actions/download_black.svg");
-}
-	
-/* Public share */
-#body-public #header {
-	background-color: #000;
+#app-navigation #app-settings input.icon-confirm {
+	background-color: var(--button-backgroundcolor) !important;
 }

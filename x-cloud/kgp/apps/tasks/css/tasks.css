@@ -1,0 +1,44 @@
+/* TASKS */
+
+/*
+.app-tasks #app-navigation .app-navigation-entry-menu li > a:hover,
+.app-tasks #app-navigation .app-navigation-entry-menu li > a
+
+ {
+	color : #000;
+}
+*/
+.settings-button {
+	background-image: var(--icon-settings-dark-fff);
+}
+
+#app-navigation:not(.vue) > ul > li > a.icon-bw, #app-navigation:not(.vue) > ul > li > ul > li > a.icon-bw
+{
+	background: none;
+	background-position: inherit;
+}
+#app-navigation > ul > li .sprite::before {
+	background: var(--icon-tasks-bw-fff) no-repeat;
+	background-position: inherit;
+}
+#app-navigation .icon-bw {
+	background-image: var(--icon-tasks-bw-fff);
+}
+
+#app-navigation .icon-more {
+	background-image: var(--icon-more-fff);
+}
+#app-navigation .icon-shared, .icon-share {
+	background-image: var(--icon-share-fff);
+}
+
+#app-content .content-wrapper .task-list .loadmore span:hover {
+	cursor: pointer;
+	opacity: 100%;
+
+}
+
+#app-content .content-wrapper .task-list .loadmore span {
+	color: var(--color-main-text);
+	opacity: 80%;
+}

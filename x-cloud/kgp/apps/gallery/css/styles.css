@@ -1,0 +1,6 @@
+#filelist-button {
+	display : none;
+}
+#slideshow > .exit, #slideshow > .slideshow-menu {
+	top: 60px;
+}
