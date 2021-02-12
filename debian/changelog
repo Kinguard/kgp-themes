@@ -1,3 +1,9 @@
+kgp-themes (1.1.0~test1) vili; urgency=medium
+
+  * PA Nilssson: Update NC-Themes to current
+
+ -- Tor Krill <tor@openproducts.se>  Mon, 06 Jul 2020 08:03:59 +0200
+
 kgp-themes (1.0.9) vili; urgency=medium
 
   * Update dep on php
