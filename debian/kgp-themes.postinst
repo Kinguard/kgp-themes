@@ -36,6 +36,9 @@ case "$1" in
         rm -rf /usr/share/roundcube/skins/kgp
         ln -s /usr/share/kgp-themes/roundcube/kgp /usr/share/roundcube/skins/kgp
 
+        # RoundCube wants us to run an update after install.
+        /usr/share/roundcube/bin/updatecss.sh --dir /usr/share/roundcube/skins/kgp
+
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

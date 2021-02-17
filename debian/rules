@@ -15,4 +15,10 @@
 override_dh_auto_build:
 	# remove any old .min.css / .min.js files
 	# and then run minimizer
-	./minifycss.sh -rm	
+	#
+	#./minifycss.sh -rm	# Currently not used.
+
+	# build RoundCube Kinguard Theme
+	lessc -x roundcube/kgp/styles/styles.less > roundcube/kgp/styles/styles.css
+	lessc -x roundcube/kgp/styles/print.less > roundcube/kgp/styles/print.css
+	lessc -x roundcube/kgp/styles/embed.less > roundcube/kgp/styles/embed.css

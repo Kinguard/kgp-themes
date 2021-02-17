@@ -1,12 +1,21 @@
 {
-	"name": "KinGuard Standard",
-	"author": "PA Nilsson, OpenProducts (http://www.kinguardproject.org)",
+	"name": "Kinguard Standard (Elastic based)",
+	"author": "PA Nilsson, http://www.kinguardproject.org",
 	"license": "Creative Commons Attribution-ShareAlike",
 	"license-url": "http://creativecommons.org/licenses/by-sa/3.0/",
-	"extends":"larry",
+	"extends": "elastic",
 	"config": {
 		"support_url" : "https://www.kinguardproject.org/forum",
-		"product_name" : "The KinGuard Project Webmail"
+		"product_name" : "The KinGuard Project Webmail",
+		"layout": "widescreen",
+		"jquery_ui_colors_theme": "bootstrap",
+		"embed_css_location": "/styles/embed.css",
+		"editor_css_location": "/styles/embed.css",
+		"media_browser_css_location": "none"
+	},
+	"meta": {
+		"viewport": "width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0",
+		"theme-color": "#f4f4f4",
+		"msapplication-navbutton-color": "#f4f4f4"
 	}
-
 }

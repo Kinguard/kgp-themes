@@ -1,3 +1,9 @@
+kgp-themes (1.1.0~test2) vili; urgency=medium
+
+  * Change theme to be based on "Elastic" theme
+
+ -- PA Nilsson <pa@openproducts.se>  Wed, 17 Feb 2021 13:01:59 +0100
+
 kgp-themes (1.1.0~test1) vili; urgency=medium
 
   * PA Nilssson: Update NC-Themes to current
