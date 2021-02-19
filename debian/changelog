@@ -1,3 +1,9 @@
+kgp-themes (1.1.0~test3) vili; urgency=medium
+
+  * Use templates, fonts and deps from elastic theme. 
+
+ -- PA Nilsson <pa@openproducts.se>  Fri, 19 Feb 2021 11:15:42 +0100
+
 kgp-themes (1.1.0~test2) vili; urgency=medium
 
   * Change theme to be based on "Elastic" theme
