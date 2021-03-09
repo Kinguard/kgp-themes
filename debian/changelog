@@ -1,3 +1,9 @@
+kgp-themes (1.1.0~test4) vili; urgency=medium
+
+  * PA Nilsson: Updated NC theme
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 09 Mar 2021 11:40:30 +0100
+
 kgp-themes (1.1.0~test3) vili; urgency=medium
 
   * Use templates, fonts and deps from elastic theme. 
