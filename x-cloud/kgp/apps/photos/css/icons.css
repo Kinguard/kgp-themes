@@ -1,0 +1,24 @@
+#filelist-button {
+	display : none;
+}
+#slideshow > .exit, #slideshow > .slideshow-menu {
+	top: 60px;
+}
+.app-navigation .icon-yourphotos {
+	background-image: var(--icon-photos-yourphotos-fff);
+}
+.app-navigation .icon-video {
+	background-image: var(--icon-video-fff);
+}
+.app-navigation .icon-favorite {
+	background-image: var(--icon-star-fff);
+}
+.app-navigation .icon-files-dark {
+	background-image: var(--icon-files-fff);
+}
+.app-navigation .icon-share {
+	background-image: var(--icon-share-fff);
+}
+.app-navigation .icon-tag {
+	background-image: var(--icon-tag-fff);
+}

@@ -12,20 +12,26 @@ body {
 	--button-textcolor : #000;
 	--button-alttextcolor : #fff;
 	--altbutton-backgroundcolor : #000;
-	--text-hover : #555;
 
+	--text-hover : #555;
+	--color-text-light : #fff;
+
+	--color-background-hover : var(--button-hoverborder);
 	--color-primary-element : #e8ccaf);
 	--color-primary-element-light : #ce776f;
-	--color-background-dark : var(--button-backgroundcolor);
+	--color-background-dark : #eeeeee;
+	--nav-width : 299px; /* 1px border on the app-nav */
 }
 
 
 
-#app-navigation {
+#app-navigation, .app-navigation {
 	--color-primary : var(--button-backgroundcolor);
 	--color-main-text : white;
 	--color-main-background : black;
 	--color-text-lighter : var(--color-main-text);
+	--color-primary-light: var(--color-primary-element-light);
+	width : var(--nav-width);
 }
 
 #body-login {
@@ -61,19 +67,29 @@ body {
 #app-content #controls {
 	/* left : 47px;*/
 	top : 0px;
+	margin-top: -45px
 }
 
-#header #contactsmenu, #header #settings {
+#header #contactsmenu,
+#header #settings,
+#header #settings li[data-id="core_apps"],
+#header #settings li[data-id="core_users"],
+#header #settings li[data-id="logout"]
+{
 	display: none;
 }
-	
+
 #body-user #header {
-	background-color: transparent;
+	background-image: linear-gradient(to right, transparent 50%, var(--color-primary) 100%) !important;
+	background-color: transparent !important;
 	pointer-events : none;
 }
 
-#body-user #header .header-left {
-	width : 250px;
+#body-user #header div.header-left {
+	width : var(--nav-width);
+	flex : unset;
+	display: block;
+	background-color: var(--altbutton-backgroundcolor);
 }
 
 #body-user #header .header-right {
@@ -92,8 +108,20 @@ select {
 	transition: all 0.3s ease 0s;
 }
 
+div.select2-drop .select2-search input, select, input:not([type="range"]), textarea, .app-navigation option, #app-navigation option {
+	background-color: var(--color-background-dark);
+	color: var(--button-textcolor);
+	border: 1px solid var(--button-border);
+}
 
-div.select2-drop .select2-search input, select, button, .button, input:not([type="range"]), textarea, div[contenteditable="true"], .pager li a {
+#app-navigation input[type="checkbox"], .app-navigation input[type="checkbox"] {
+	color: var(--button-alttextcolor);
+}
+input[type='checkbox'].checkbox:checked+label::before {
+	background-image: var(--icon-checkmark-fff) !important;
+}
+
+input[type="button"],input[type="cancel"], button, .button, div[contenteditable="true"], .pager li a {
 	background-color: var(--button-backgroundcolor);
 	color: var(--button-textcolor);
 	border: 1px solid var(--button-border);
@@ -103,10 +131,17 @@ div.select2-drop .select2-search input:not(:disabled):not(.primary):hover, selec
 	border-color: var(button-hoverborder);
 }
 
-#app-navigation {
+#app-navigation, .app-navigation {
 	
 	color : var(--color-main-text);
+	--color-background-hover : none;
 }
+
+/* Contacts navigation */
+.app-navigation {
+	background-color: var(--color-main-background);
+}
+
 
 #app-navigation:not(.vue) {
 
@@ -115,44 +150,81 @@ div.select2-drop .select2-search input:not(:disabled):not(.primary):hover, selec
 	height : 100%;
 }
 
+#app-navigation:not(.vue) > ul > li > a.active, #app-navigation:not(.vue) > ul > li > ul > li > a.active,#app-navigation:not(.vue) > ul > li > a:hover, #app-navigation:not(.vue) > ul > li > ul > li > a:hover {
+	opacity: 1;
+}
 #app-navigation:not(.vue) .collapsible::before {
 	background-image: var(--icon-triangle-s-fff);
-}
-
-#app-navigation .icon-add {
-	background-image: var(--icon-add-fff);
-}
-#app-navigation .icon-shared, #app-navigation .icon-share {
-	background-image: var(--icon-share-fff);
-}
-#app-navigation .icon-more {
-	background-image: var(--icon-more-fff);
-}
-#app-navigation .settings-button {
-	background-image: var(--icon-settings-dark-fff);
-}
-#app-navigation .icon-download {
-	background-image: var(--icon-download-fff);
-}
-#app-navigation .icon-contacts-dark {
-	background-image: var(--icon-contacts-fff);
-}
-#app-navigation .icon-public {
-	background-image: var(--icon-public-fff);
-}
-#app-navigation .icon-rename {
-	background-image: var(--icon-rename-fff);
-}
-#app-navigation .icon-user {
-	background-image: var(--icon-user-fff);
 }
 
 #app-navigation input[type="checkbox"].checkbox:checked + label::before,
 #app-navigation input[type="radio"].checkbox:checked + label::before
 {
-	background-color: var(----color-main-background);
+	background-color: var(--color-main-background);
 }
 
 #app-navigation #app-settings input.icon-confirm {
 	background-color: var(--button-backgroundcolor) !important;
 }
+
+/*
+#app-navigation li a[href="/nc/index.php/settings/admin/overview"] {
+	display: none;
+}
+*/
+
+.app-navigation {
+	color: var(--color-main-text);
+}
+.app-navigation .icon-add {
+	background-image: var(--icon-add-fff);
+}
+.app-navigation .icon-shared, #app-navigation .icon-share {
+	background-image: var(--icon-share-fff);
+}
+.app-navigation .icon-more {
+	background-image: var(--icon-more-fff);
+}
+.app-navigation .settings-button {
+	background-image: var(--icon-settings-dark-fff);
+}
+.app-navigation .icon-download {
+	background-image: var(--icon-download-fff);
+}
+.app-navigation .icon-contacts-dark {
+	background-image: var(--icon-contacts-fff);
+}
+.app-navigation .icon-public {
+	background-image: var(--icon-public-fff);
+}
+.app-navigation .icon-rename {
+	background-image: var(--icon-rename-fff);
+}
+.app-navigation .icon-user {
+	background-image: var(--icon-user-fff);
+}
+.app-navigation #app-settings-header .settings-button {
+	background-image: var(--icon-settings-dark-fff);
+}
+
+.app-navigation-toggle {
+	color : var(--button-textcolor);
+	margin-top: -5px;
+}
+
+.app-contacts .app-content-list {
+	margin-top: 40px;
+}
+.app-contacts .contact-details input[type="text"] {
+	background-color: var(--color-background-dark);
+}
+
+#app-settings #app-settings-content {
+	max-height: 500px;
+}
+
+/* Contact specific */
+.app-contacts #new-contact-button {
+	color : var(--button-alttextcolor);
+}
+

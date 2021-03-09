@@ -12,24 +12,35 @@
 	background-image: var(--icon-settings-dark-fff);
 }
 
-#app-navigation:not(.vue) > ul > li > a.icon-bw, #app-navigation:not(.vue) > ul > li > ul > li > a.icon-bw
+.app-navigation:not(.vue) > ul > li > a.icon-bw, .app-navigation:not(.vue) > ul > li > ul > li > a.icon-bw
 {
 	background: none;
 	background-position: inherit;
 }
-#app-navigation > ul > li .sprite::before {
+.app-navigation > ul > li .sprite::before {
 	background: var(--icon-tasks-bw-fff) no-repeat;
 	background-position: inherit;
 }
-#app-navigation .icon-bw {
+.app-navigation .icon-bw {
 	background-image: var(--icon-tasks-bw-fff);
 }
 
-#app-navigation .icon-more {
+.app-navigation .icon-more {
 	background-image: var(--icon-more-fff);
 }
-#app-navigation .icon-shared, .icon-share {
+.app-navigation .icon-shared, .icon-share {
 	background-image: var(--icon-share-fff);
+}
+
+.icon-delete {
+	background-image : var(--icon-delete-fff);
+}
+.app-navigation .action-item__menutoggle.icon-view-module {
+	background-color: var(--button-backgroundcolor) !important;	
+
+}
+.app-navigation .action-item__menutoggle--default-icon {
+	color : var(--button-alttextcolor);
 }
 
 #app-content .content-wrapper .task-list .loadmore span:hover {
@@ -41,4 +52,54 @@
 #app-content .content-wrapper .task-list .loadmore span {
 	color: var(--color-main-text);
 	opacity: 80%;
+}
+.app-navigation>ul>div>li.collection .app-navigation-entry-icon::before, .app-navigation>ul>li.collection .app-navigation-entry-icon::before {
+	background: var(--icon-tasks-sprt-bw-fff);
+}
+
+#app-settings-content li.collection .icon::before {
+	background: var(--icon-tasks-sprt-bw-fff) no-repeat;
+}
+
+.app-navigation .app-navigation-entry-new-calendar:hover .app-navigation-entry__title, .app-navigation .app-navigation-entry-new-calendar--open .app-navigation-entry__title {
+		color : var(--button-alttextcolor) !important;
+}
+
+
+/* calendar specific styles */
+
+.mx-datepicker .mx-calendar {
+	margin-left : 5px;
+	margin-right : 5px;
+}
+
+.app-navigation #datepicker table tbody button:hover {
+	opacity: 1;
+	color : var(--button-backgroundcolor);
+}
+.mx-datepicker .mx-calendar .mx-week-number,.mx-datepicker .mx-table thead>tr>th{
+	color: var(--color-primary) !important;
+	opacity: 1 !important;
+}
+
+.mx-datepicker .mx-calendar-header button:hover, .mx-datepicker .mx-time-header button:hover, .mx-datepicker .mx-calendar-header button:focus, .mx-datepicker .mx-time-header button:focus {
+	background-color: var(--color-primary-element-light) !important;
+}
+
+.app-navigation .app-navigation-entry-new-calendar .app-navigation-entry__title {
+	color : var(--button-alttextcolor) !important;
+}
+
+
+
+input[type="checkbox"].checkbox:checked + label::before
+{
+	background-image : url('../../../../core/img/actions/checkmark.svg');
+	background-color: transparent;
+}
+
+input[type="submit"], input[type="button"], button, .button, .pager li a,
+input.primary[type="button"]
+{
+    opacity: 1;
 }
