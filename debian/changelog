@@ -1,3 +1,15 @@
+kgp-themes (1.1.0~test5) vili; urgency=medium
+
+  * Added styles to calendar. 
+
+ -- PA Nilsson <pa@openproducts.se>  Fri, 12 Mar 2021 08:45:58 +0100
+
+kgp-themes (1.1.0~test4) vili; urgency=medium
+
+  * Updated Nextcloud theme. 
+
+ -- PA Nilsson <pa@openproducts.se>  Tue, 09 Mar 2021 08:25:21 +0100
+
 kgp-themes (1.1.0~test3) vili; urgency=medium
 
   * Use templates, fonts and deps from elastic theme. 
