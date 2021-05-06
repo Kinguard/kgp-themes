@@ -1,3 +1,9 @@
+kgp-themes (1.1.0~test5) vili; urgency=medium
+
+  * Add deps on NC and RC since postinst depends on them
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 06 May 2021 14:06:07 +0200
+
 kgp-themes (1.1.0~test4) vili; urgency=medium
 
   * PA Nilsson: Updated NC theme
