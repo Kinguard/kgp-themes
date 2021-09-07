@@ -1,0 +1,9 @@
+#! /bin/bash
+
+export LOGLEVEL=6
+export LOGNAME="kgp-themes"
+source /usr/share/kgp-bashlibrary/scripts/kgp-logging.sh
+
+log_debug "Disable theming app"
+
+sudo -u www-data php /usr/share/nextcloud/occ -nq app:disable theming || true

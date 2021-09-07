@@ -1,3 +1,15 @@
+kgp-themes (1.1.0) vili; urgency=medium
+
+  * Buster release
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 07 Sep 2021 09:33:13 +0200
+
+kgp-themes (1.1.0~test7) vili; urgency=medium
+
+  * Disable postinst nc questions
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 28 May 2021 10:21:28 +0200
+
 kgp-themes (1.1.0~test6) vili; urgency=medium
 
   * Add deps on NC and RC since postinst depends on them
