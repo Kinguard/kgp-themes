@@ -9,6 +9,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# Needed for debian packaged node-less to work with nodesource nodejs pkg
+export NODE_PATH=/usr/share/nodejs/
+
 %:
 	dh $@ 
 
