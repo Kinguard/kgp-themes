@@ -10,7 +10,7 @@ Standards-Version: 3.9.4
 
 Package: kgp-themes
 Architecture: all
-Depends: ${misc:Depends}, php7.3-cli, nextcloud, roundcubemail
+Depends: ${misc:Depends}, php-cli, nextcloud, roundcubemail
 Conflicts: 
 Description: The Kinguard Project webapp themes
  Provieds themes for roundcube and nextcloud web applications
