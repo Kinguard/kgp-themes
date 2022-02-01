@@ -1,3 +1,10 @@
+kgp-themes (1.1.1) vigrid; urgency=medium
+
+  * Update dep on php-cli
+  * Bullseye build
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 01 Feb 2022 16:29:31 +0100
+
 kgp-themes (1.1.0) vili; urgency=medium
 
   * Buster release
